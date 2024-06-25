@@ -1,0 +1,54 @@
+{
+    "datos_negocio": {
+      "fecha_creacion": "",
+      "fundadores": [],
+      "motivacion_creacion": "",
+      "objetivo_creacion": "",
+      "productos_servicios": [],
+      "sector_industria": "",
+      "costo_operacion_ventas": "",
+      "presencia_web_redes": "",
+      "perfil_negocio": ""
+    },
+    "clientes": {
+      "reclamos_quejas_frecuentes": [],
+      "motivos_gratitud_felicitacion": [],
+      "contacto_cliente_clave": "",
+      "atencion_cliente": "",
+      "canales_comunicacion_cliente": [],
+      "descripcion_clientes_frecuentes": "",
+      "trabajos_tareas_cliente_contratables": [],
+      "atraccion_venta_cliente": "",
+      "clientes_ingresos_importantes": []
+    },
+    "competidores": {
+      "competidores_preocupantes": [],
+      "ventajas_competidores": []
+    },
+    "propuesta_valor": {
+      "atributos_diferenciadores": [],
+      "preferencia_cliente": "",
+      "razon_preferencia": ""
+    },
+    "fuentes_ingreso": {
+      "metodos_pago_cliente": [],
+      "fuentes_ingreso_adicionales": []
+    },
+    "estructura_costos": {
+      "costos_mas_altos": [],
+      "costos_cumplimiento_promesas": []
+    },
+    "recursos_capacidades": {
+      "recursos_mas_importantes": [],
+      "habilidades_competitivas": [],
+      "procesos_subcontratados": [],
+      "talento_critico_negocio": ""
+    },
+    "liderazgo_cultura": {
+      "toma_decisiones_clave": "",
+      "reuniones_negocio_empleados": "",
+      "descripcion_negocio_diferenciador": "",
+      "gestion_rendimiento_insatisfactorio": ""
+    }
+  }
+  
