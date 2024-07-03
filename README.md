@@ -20,8 +20,8 @@ Herramienta para la generacion de estrategias para empresas tipo pyme
 - [CSS](https://developer.mozilla.org/es/docs/Web/CSS)
 - [SASS](https://sass-lang.com/) 
 - [Bootstrap](https://getbootstrap.com/) 
-- [Json-server]() 
-- [Node]() 
+- [Json-server](https://www.npmjs.com/package/json-server) 
+- [Node](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs) 
 
 
 

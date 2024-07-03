@@ -3,72 +3,173 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- estilos -->
+    <title>NODO | Estramipyme</title>
+    <!-- iconos -->
+    <script src="https://kit.fontawesome.com/4f3aa229ff.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./dist/bundle.css" />
   </head>
   <body>
-    <nav>
-      <div>
-        <p>Logo</p>
-      </div>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Caracteristicas</a></li>
-        <li><a href="#">Testimonios</a></li>
-        <li><a href="./pages/diagnostic.html">Iniciar Sesion</a></li>
-        <li><a href="./pages/diagnostic.html">Crear Cuenta</a></li>
-      </ul>
-    </nav>
-    <main>
-      <section id="home">
-        <p>Home</p>
-        <video poster="./assets/images/estramipyme video portada.png" controls width="500" height="300">
-          <source src="./assets/videos/estramipyme.mp4">
-        </video>
-      </section>
-      <section id="features">
-        <p>Caracteristicas</p>
-        <div class="container">
-          <div class="container-column">
-            <p>Columna 1</p>
-            <ul>
-              <li>Caracteristica 1</li>
-              <li>Caracteristica 2</li>
-              <li>Caracteristica 3</li>
-              <li>Caracteristica 4</li>
-            </ul>
-          </div>
-          <div class="container-column">
-            <p>Columna 2</p>
-            <ul>
-              <li>Caracteristica 1</li>
-              <li>Caracteristica 2</li>
-              <li>Caracteristica 3</li>
-              <li>Caracteristica 4</li>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><i class="fa-solid fa-rocket"></i> | Estramipyme</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="d-flex justify-content-end w-100">
+            <ul class="navbar-nav mb-2 mb-lg-0 ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Características</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Testimonios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Iniciar Sesión</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Crear Cuenta</a>
+              </li>
             </ul>
           </div>
         </div>
+      </div>
+    </nav>
+    <main>
+      <!-- HOME -->
+      <section id="home">
+        <div class="container px-4 py-5">
+          <h2 class="pb-2 border-bottom">Inicio</h2>
+          
+          <div class="embed-responsive embed-responsive-4by3  text-center">
+            <iframe class="embed-responsive-item" src="./assets/videos/estramipyme.mp4" allowfullscreen></iframe>
+          </div>
+        </div>
       </section>
-      <section id="testimonials">
-        <p>Testimonios</p>
-        <div class="container">
-          <div class="container-column">
-            <p>Testimonio 1</p>
+      <!-- CARACTERISTICAS -->
+      <section id="features">
+        <div class="container px-4 py-5">
+          <h2 class="pb-2 border-bottom">Características</h2>
+      
+          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="feature col">
+              <div class="feature-icon">
+                <i class="fa-solid fa-chart-simple fa-2x"></i>
+              </div>
+              <h3>Metricas descriptivas</h3>
+              <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+              <a href="#" class="icon-link">
+                Call to action
+              </a>
+            </div>
+            <div class="feature col">
+              <div class="feature-icon">
+                <i class="fa-regular fa-clock fa-2x"></i>
+              </div>
+              <h3>Ahorro de tiempo</h3>
+              <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+              <a href="#" class="icon-link">
+                Call to action
+              </a>
+            </div>
+            <div class="feature col">
+              <div class="feature-icon">
+                <i class="fa-solid fa-hand-holding-dollar fa-2x"></i>
+              </div>
+              <h3>Reduccion de costos</h3>
+              <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+              <a href="#" class="icon-link">
+                Call to action
+              </a>
+            </div>
           </div>
-          <div class="container-column">
-            <p>Testimonio 2</p>
-          </div>
-          <div class="container-column">
-            <p>Testimonio 3</p>
+        </div>
+      </section>
+      <!-- TESTIMONIOS -->
+      <section id="testimonials py-5 mt-5 mx-5">
+        <div class="container px-4 py-5">
+          <h2 class="pb-2 border-bottom">Testimonios</h2>
+          <div class="row row-cols-1 row-cols-md-4 mb-3 text-center py-5 mt-5 mx-5">
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <img src="./assets/images/testimonio1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Mabeka</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <img src="./assets/images/testimonio2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Carpinteria de Jaime</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <img src="./assets/images/testimonio3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Tienda de don Juan</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <img src="./assets/images/testimonio4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Fundacion ninos felices</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
-    <footer>
-      <p>Pie de pagina</p>
+    <!-- FOOTER -->
+    <footer class="bg-primary py-5 mt-5 text-light">
+      <div class="container  text-center">
+        <p class="display-5 mb-3">Estramipyme</p>
+        <small>&copy; Todos los derechos reservados</small>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <h5>Informacion</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1">Telefonos: +xx xxxxxxxxx</li>
+            <li class="mb-1">Correo: Eafit@eafit.edu.co</li>
+            <li class="mb-1">Ciudad: Medellin</li>
+            <li class="mb-1">Direccion: xxxxxxx</li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h5>Recursos</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Plantillas educativas</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Guia institucional</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Colaboradores</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h5>Contactanos</h5>
+          <ul class="d-flex list-unstyled text-small">
+            <li class="mx-1"><a class="link-secondary text-decoration-none" href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+            <li class="mx-1"><a class="link-secondary text-decoration-none" href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li class="mx-1"><a class="link-secondary text-decoration-none" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li class="mx-1"><a class="link-secondary text-decoration-none" href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+          </ul>
+        </div>
+      </div>
     </footer>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="./scripts/index.js"></script>
-
   </body>
 </html>
