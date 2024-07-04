@@ -1,120 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Diagnostico Formulario</title>
-    <link rel="stylesheet" href="../styles/styles.css" />
-    <style>
-      * {box-sizing: border-box}
-      body {font-family: "Lato", sans-serif;}
-      
-      /* Style the tab */
-      .tab {
-        float: left;
-        border: 1px solid #ccc;
-        background-color: #f1f1f1;
-        width: 30%;
-      }
-      
-      /* Style the buttons inside the tab */
-      .tab button {
-        display: block;
-        background-color: inherit;
-        color: black;
-        padding: 22px 16px;
-        width: 100%;
-        border: none;
-        outline: none;
-        text-align: left;
-        cursor: pointer;
-        transition: 0.3s;
-        font-size: 17px;
-      }
-      
-      /* Change background color of buttons on hover */
-      .tab button:hover {
-        background-color: #ddd;
-      }
-      
-      /* Create an active/current "tab button" class */
-      .tab button.active {
-        background-color: #ccc;
-      }
-      
-      /* Style the tab content */
-      .tabcontent {
-        float: left;
-        padding: 0px 12px;
-        border: 1px solid #ccc;
-        width: 70%;
-        border-left: none;
-      }
-      </style>
-  </head>
-  <body>
-    <nav>
-      <div>
-        <p>Logo</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NODO | Estramipyme</title>
+    <!-- iconos -->
+    <script src="https://kit.fontawesome.com/4f3aa229ff.js" crossorigin="anonymous"></script>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/images/favicon/site.webmanifest">
+    <!-- custom css -->
+    <link rel="stylesheet" href="../dist/bundle.css" />  
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="fa-solid fa-rocket"></i> | Estramipyme</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="d-flex justify-content-end w-100">
+          <ul class="navbar-nav mb-2 mb-lg-0 ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Cerrar sesion</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <ul>
-        <li><a href="../index.html">Cerrar Sesion</a></li>
-      </ul>
-    </nav>
-    <section>
-      <div>
-        <a href="../index.html">Volver</a>
-      </div>
-      <div class="tab">
-        <button class="tablinks" onclick="openSection(event, 'Datos del negocio')" id="defaultOpen">Datos del negocio</button>
-        <button class="tablinks" onclick="openSection(event, 'Clientes')">Clientes</button>
-        <button class="tablinks" onclick="openSection(event, 'Competidores')">Competidores</button>
-        <button class="tablinks" onclick="openSection(event, 'Propuesta de valor')">Propuesta de valor</button>
-        <button class="tablinks" onclick="openSection(event, 'Fuentes de ingreso')">Fuentes de ingreso</button>
-        <button class="tablinks" onclick="openSection(event, 'Estructura de costos')">Estructura de costos</button>
-        <button class="tablinks" onclick="openSection(event, 'Recursos y capacidades')">Recursos y capacidades</button>
-        <button class="tablinks" onclick="openSection(event, 'Liderazgo y cultura')">Liderazgo y cultura</button>
-      </div>
-      <div id="Datos del negocio" class="tabcontent">
-        <h3>Datos del negocio</h3>
-        <!-- Contenido de Datos del negocio -->
-      </div>
+    </div>
+  </nav>    
 
-      <div id="Clientes" class="tabcontent">
-        <h3>Clientes</h3>
-        <!-- Contenido de Clientes -->
-      </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form id="multiStepForm">
+            <!-- Step 1 -->
+            <div class="step">
+              <h2>Step 1: Personal Information</h2>
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name">
+              </div>
+              <button class="btn btn-primary next">Next</button>
+            </div>
 
-      <div id="Competidores" class="tabcontent">
-        <h3>Competidores</h3>
-        <!-- Contenido de Competidores -->
-      </div>
+            <!-- Step 2 -->
+            <div class="step">
+              <h2>Step 2: Contact Information</h2>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email">
+              </div>
+              <button class="btn btn-primary prev">Previous</button>
+              <button class="btn btn-primary next">Next</button>
+            </div>
 
-      <div id="Propuesta de valor" class="tabcontent">
-        <h3>Propuesta de valor</h3>
-        <!-- Contenido de Propuesta de valor -->
+            <!-- Step 3 -->
+            <div class="step">
+              <h2>Step 3: Confirmation</h2>
+              <p>Review your information before submitting:</p>
+              <div id="results"></div>
+              <button type="submit" class="btn btn-primary prev">Previous</button>
+              <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+          </form>
+        </div>
       </div>
+    </div>
+    <script type="module" src="../scripts/index.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const form = document.getElementById("multiStepForm");
+        const steps = form.querySelectorAll(".step");
+        let currentStep = 0;
 
-      <div id="Fuentes de ingreso" class="tabcontent">
-        <h3>Fuentes de ingreso</h3>
-        <!-- Contenido de Fuentes de ingreso -->
-      </div>
+        showStep(currentStep);
 
-      <div id="Estructura de costos" class="tabcontent">
-        <h3>Estructura de costos</h3>
-        <!-- Contenido de Estructura de costos -->
-      </div>
+        function showStep(stepIndex) {
+          steps.forEach((step, index) => {
+            index === stepIndex ? step.style.display = "block" : step.style.display = "none";
+          });
+        }
 
-      <div id="Recursos y capacidades" class="tabcontent">
-        <h3>Recursos y capacidades</h3>
-        <!-- Contenido de Recursos y capacidades -->
-      </div>
+        const prevBtns = form.querySelectorAll(".prev");
+        const nextBtns = form.querySelectorAll(".next");
 
-      <div id="Liderazgo y cultura" class="tabcontent">
-        <h3>Liderazgo y cultura</h3>
-        <!-- Contenido de Liderazgo y cultura -->
-      </div>
-    </section>
-    <script src="../scripts/app.js"></script>
+        prevBtns.forEach(btn => {
+          btn.addEventListener("click", () => {
+            if (currentStep > 0) {
+              currentStep--;
+              showStep(currentStep);
+            }
+          });
+        });
+
+        nextBtns.forEach(btn => {
+          btn.addEventListener("click", () => {
+            if (currentStep < steps.length - 1) {
+              currentStep++;
+              showStep(currentStep);
+            }
+          });
+        });
+
+        form.addEventListener("submit", function(event) {
+          event.preventDefault();
+          // Here you can handle form submission
+          const formData = new FormData(form);
+          const results = document.getElementById("results");
+          results.innerHTML = "";
+          for (const [key, value] of formData.entries()) {
+            results.innerHTML += `<p><strong>${key}:</strong> ${value}</p>`;
+          }
+          showStep(currentStep); // Show final step after submission
+        });
+      });
+    </script>
   </body>
 </html>
