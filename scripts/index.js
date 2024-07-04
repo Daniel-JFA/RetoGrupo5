@@ -1,13 +1,17 @@
-import '../styles/main.scss';
-
 const API_URL = "http://localhost:3000/";
-let endpoint = "clientes";
+const ENDPOINT = "estramypyme";
+
+async function getQuestions(url) {
+  try {
+    const response = await fetch(url,  { mode: 'no-cors' });
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error("Error:", error);
+  }
+}
 
 window.addEventListener("DOMContentLoaded", () => {
-  fetch(API_URL + endpoint)
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
-    });
+  getQuestions(API_URL + ENDPOINT)
 });
 

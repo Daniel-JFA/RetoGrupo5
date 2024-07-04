@@ -45,6 +45,13 @@ Abrir la terminal y ejecutar el comando para que el compilador de sass convierta
 npm run watch
 ```
 
+Abrir una segunda terminal y ejecutar el comando para ejecutar el dummy-server:
+
+```sh
+npm run server
+```
+
+
 
 ## License
 

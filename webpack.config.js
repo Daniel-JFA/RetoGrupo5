@@ -17,6 +17,7 @@ module.exports = {
           },
           "css-loader",
           "sass-loader",
+          "style-loader"
         ],
       },
     ],
