@@ -1,7 +1,6 @@
 /*variables*/
 $primary:       #000066;
 $secondary:     #fff;
-$text-primary:  #fff;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
@@ -16,4 +15,9 @@ $text-primary:  #fff;
     &:hover{
         color: rgb(97, 90, 90);
     }
+}
+
+#main {
+    width: 45rem;
+    height: 35rem;
 }

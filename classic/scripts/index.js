@@ -78,6 +78,8 @@ function updateProgressBar(index) {
   const progressBar = document.getElementById("progress-bar");
   const progress = ((index + 1) / sections.length) * 100;
   progressBar.style.width = `${progress}%`;
+  document.getElementById("results-btn").disabled = progress !== 100;
+  console.log(document.getElementById("results-btn"));
 }
 
 function goToTop() {
@@ -89,7 +91,6 @@ function goToTop() {
 
 
 window.addEventListener("DOMContentLoaded", async () => {
-  //document.getElementById("go-top-btn").addEventListener("click", goToTop);
 
   sections = await getQuestions(API_URL + ENDPOINT);
   if (sections.length > 0) {

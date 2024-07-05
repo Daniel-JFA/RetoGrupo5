@@ -286,5 +286,52 @@
         }
       ]
     }
+  ],
+  "secciones": [
+    {
+      "id": 1,
+      "title": "Propósito y Alineación",
+      "max": 100
+    },
+    {
+      "id": 2,
+      "title": "Procesos y Eficiencia",
+      "max": 100
+    },
+    {
+      "id": 3,
+      "title": "Productos y Servicios",
+      "max": 100
+    },
+    {
+      "id": 4,
+      "title": "Clientes",
+      "max": 100
+    },
+    {
+      "id": 5,
+      "title": "Competencia",
+      "max": 100
+    },
+    {
+      "id": 6,
+      "title": "Datos y Análisis",
+      "max": 100
+    },
+    {
+      "id": 7,
+      "title": "Innovación",
+      "max": 100
+    },
+    {
+      "id": 8,
+      "title": "Recursos Humanos",
+      "max": 100
+    },
+    {
+      "id": 9,
+      "title": "Regulación y Cumplimiento",
+      "max": 100
+    }
   ]
 }
