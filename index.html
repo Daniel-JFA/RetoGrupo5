@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NODO | Estramipyme</title>
-    <!-- iconos -->
+    <!-- ICONOS -->
     <script src="https://kit.fontawesome.com/4f3aa229ff.js" crossorigin="anonymous"></script>
-    <!-- favicon -->
+    <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
-    <!-- custom css -->
+    <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="./dist/bundle.css" />
   </head>
   <body>
@@ -26,13 +26,13 @@
           <div class="d-flex justify-content-end w-100">
             <ul class="navbar-nav mb-2 mb-lg-0 ml-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Características</a>
+                <a class="nav-link" href="#features">Características</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Testimonios</a>
+                <a class="nav-link" href="#testimonials">Testimonios</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./pages/diagnostic-form.html">Iniciar Sesión</a>
@@ -46,6 +46,8 @@
       </div>
     </nav>
     <main>
+      <!-- SCROLL TO TOP -->
+      <i id="go-top-btn" class="fa-solid fa-circle-arrow-up fa-3x"></i>
       <!-- HOME -->
       <section id="home">
         <div class="container px-4 py-5">
@@ -178,5 +180,6 @@
       </div>
     </footer>  
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./scripts/landing.js"></script>
   </body>
 </html>
