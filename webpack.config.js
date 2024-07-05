@@ -2,7 +2,10 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   //Aquí incluiremos muchas cosas.
-  entry: "./scripts/index.js",
+  entry: [
+    "./scripts/index.js",
+    "./scripts/landing.js"
+  ],
   output: {
     filename: "bundle.js",
   },
@@ -17,7 +20,6 @@ module.exports = {
           },
           "css-loader",
           "sass-loader",
-          "style-loader"
         ],
       },
     ],

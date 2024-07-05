@@ -1,5 +1,19 @@
 /*variables*/
 $primary:       #000066;
+$secondary:     #fff;
 $text-primary:  #fff;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+#go-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: $secondary;
+    border-radius: 50%;
+    cursor: pointer;
+    &:hover{
+        color: rgb(97, 90, 90);
+    }
+}
