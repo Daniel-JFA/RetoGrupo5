@@ -3,11 +3,13 @@ import { IntroComponent } from './intro/intro.component';
 import { FeaturesComponent } from './features/features.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { FooterComponent } from './footer/footer.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @Component({
-  selector: 'app-landing',
+  selector: 'landing',
   standalone: true,
   imports: [
+    NavbarComponent,
     IntroComponent,
     FeaturesComponent,
     TestimonialsComponent,
