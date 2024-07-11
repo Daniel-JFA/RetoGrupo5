@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { NavbarComponent } from './shared/navbar/navbar.component';
 import { LandingComponent } from './landing/landing.component';
 
 @Component({
@@ -8,7 +7,6 @@ import { LandingComponent } from './landing/landing.component';
   standalone: true,
   imports: [
     RouterOutlet,
-    NavbarComponent,
     LandingComponent
   ],
   templateUrl: './app.component.html',
