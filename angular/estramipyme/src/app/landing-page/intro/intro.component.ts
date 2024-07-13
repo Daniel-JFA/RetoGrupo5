@@ -9,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class IntroComponent {
   videoURL = 'assets/videos/estramipyme.mp4';
+  introImgURL = 'assets/images/intro.svg'
 }

@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './features.component.scss'
 })
 export class FeaturesComponent {
-
+  featuresImgURL = 'assets/images/features.svg'
 }
