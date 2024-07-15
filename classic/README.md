@@ -10,7 +10,7 @@ Herramienta para la generacion de estrategias para empresas tipo pyme
 - David
 - Edwin
 - Jaime
-- Sebastina
+- Sebastian
 - Susana
 
 
