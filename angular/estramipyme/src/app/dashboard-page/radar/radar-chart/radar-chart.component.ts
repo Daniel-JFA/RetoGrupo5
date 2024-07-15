@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-radar-chart',
+  selector: 'radar-chart',
   standalone: true,
   imports: [],
   templateUrl: './radar-chart.component.html',
