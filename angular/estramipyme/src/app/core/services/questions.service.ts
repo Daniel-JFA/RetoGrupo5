@@ -208,112 +208,113 @@ export class QuestionsService {
         }
       ]
     },
-    // {
-    //   section_id: 7,
-    //   title: "Innovación",
-    //   questions: [
-    //     {
-    //       id: "in1",
-    //       question: "¿Cuántas patentes o nuevas ideas se han registrado en el último año?",
-    //       type: "integer"
-    //     },
-    //     {
-    //       id: "in2",
-    //       question: "¿Qué porcentaje de los ingresos proviene de productos/servicios lanzados en los últimos 3 años?",
-    //       type: "percentage"
-    //     },
-    //     {
-    //       id: "in3",
-    //       question: "¿Cuál es la tasa de éxito de los proyectos de innovación?",
-    //       type: "percentage"
-    //     },
-    //     {
-    //       id: "in4",
-    //       question: "¿Cuál es el porcentaje de presupuesto asignado a I+D en comparación con los ingresos totales?",
-    //       type: "percentage"
-    //     },
-    //     {
-    //       id: "in5",
-    //       question: "¿Cuántos proyectos de innovación pasan del concepto a la comercialización?",
-    //       type: "integer"
-    //     }
-    //   ]
-    // },
-    // {
-    //   section_id: 8,
-    //   title: "Recursos Humanos",
-    //   questions: [
-    //     {
-    //       id: "re1",
-    //       question: "¿Cuál es la tasa de rotación de empleados?",
-    //       type: "percentage"
-    //     },
-    //     {
-    //       id: "re2",
-    //       question: "¿Qué porcentaje del presupuesto se destina a la capacitación y desarrollo del personal?",
-    //       type: "percentage"
-    //     },
-    //     {
-    //       id: "re3",
-    //       question: "En una escala del 1 al 10, ¿qué tan eficiente es el uso de los recursos actuales?",
-    //       type: "integer",
-    //       scale: [
-    //         1,
-    //         10
-    //       ]
-    //     },
-    //     {
-    //       id: "re4",
-    //       question: "¿Cuál es el porcentaje de vacantes llenadas internamente a través de promociones?",
-    //       type: "percentage"
-    //     },
-    //     {
-    //       id: "re5",
-    //       question: "¿Cuál es el índice de satisfacción laboral entre los empleados?",
-    //       type: "integer",
-    //       scale: [
-    //         1,
-    //         10
-    //       ]
-    //     }
-    //   ]
-    // },
-    // {
-    //   section_id: 9,
-    //   title: "Regulación y Cumplimiento",
-    //   questions: [
-    //     {
-    //       id: "rg1",
-    //       question: "¿Cuántas multas o sanciones ha recibido la empresa en el último año por incumplimiento regulatorio?",
-    //       type: "integer"
-    //     },
-    //     {
-    //       id: "rg2",
-    //       question: "¿Qué porcentaje de los empleados ha completado la capacitación en cumplimiento normativo?",
-    //       type: "percentage"
-    //     },
-    //     {
-    //       id: "rg3",
-    //       question: "En una escala del 1 al 10, ¿qué tan preparada está la empresa para cambios regulatorios en su industria?",
-    //       type: "integer",
-    //       scale: [
-    //         1,
-    //         10
-    //       ]
-    //     },
-    //     {
-    //       id: "rg4",
-    //       question: "¿Cuál es el porcentaje de procesos internos que cumplen con las regulaciones vigentes?",
-    //       type: "percentage"
-    //     },
-    //     {
-    //       id: "rg5",
-    //       question: "¿Cuál es la frecuencia de auditorías internas para asegurar el cumplimiento?",
-    //       type: "integer"
-    //     }
-    //   ]
-    // }
+    {
+      section_id: 7,
+      title: "Innovación",
+      questions: [
+        {
+          id: "in1",
+          question: "¿Cuántas patentes o nuevas ideas se han registrado en el último año?",
+          type: "integer"
+        },
+        {
+          id: "in2",
+          question: "¿Qué porcentaje de los ingresos proviene de productos/servicios lanzados en los últimos 3 años?",
+          type: "percentage"
+        },
+        {
+          id: "in3",
+          question: "¿Cuál es la tasa de éxito de los proyectos de innovación?",
+          type: "percentage"
+        },
+        {
+          id: "in4",
+          question: "¿Cuál es el porcentaje de presupuesto asignado a I+D en comparación con los ingresos totales?",
+          type: "percentage"
+        },
+        {
+          id: "in5",
+          question: "¿Cuántos proyectos de innovación pasan del concepto a la comercialización?",
+          type: "integer"
+        }
+      ]
+    },
+    {
+      section_id: 8,
+      title: "Recursos Humanos",
+      questions: [
+        {
+          id: "re1",
+          question: "¿Cuál es la tasa de rotación de empleados?",
+          type: "percentage"
+        },
+        {
+          id: "re2",
+          question: "¿Qué porcentaje del presupuesto se destina a la capacitación y desarrollo del personal?",
+          type: "percentage"
+        },
+        {
+          id: "re3",
+          question: "En una escala del 1 al 10, ¿qué tan eficiente es el uso de los recursos actuales?",
+          type: "integer",
+          scale: [
+            1,
+            10
+          ]
+        },
+        {
+          id: "re4",
+          question: "¿Cuál es el porcentaje de vacantes llenadas internamente a través de promociones?",
+          type: "percentage"
+        },
+        {
+          id: "re5",
+          question: "¿Cuál es el índice de satisfacción laboral entre los empleados?",
+          type: "integer",
+          scale: [
+            1,
+            10
+          ]
+        }
+      ]
+    },
+    {
+      section_id: 9,
+      title: "Regulación y Cumplimiento",
+      questions: [
+        {
+          id: "rg1",
+          question: "¿Cuántas multas o sanciones ha recibido la empresa en el último año por incumplimiento regulatorio?",
+          type: "integer"
+        },
+        {
+          id: "rg2",
+          question: "¿Qué porcentaje de los empleados ha completado la capacitación en cumplimiento normativo?",
+          type: "percentage"
+        },
+        {
+          id: "rg3",
+          question: "En una escala del 1 al 10, ¿qué tan preparada está la empresa para cambios regulatorios en su industria?",
+          type: "integer",
+          scale: [
+            1,
+            10
+          ]
+        },
+        {
+          id: "rg4",
+          question: "¿Cuál es el porcentaje de procesos internos que cumplen con las regulaciones vigentes?",
+          type: "percentage"
+        },
+        {
+          id: "rg5",
+          question: "¿Cuál es la frecuencia de auditorías internas para asegurar el cumplimiento?",
+          type: "integer"
+        }
+      ]
+    }
   ]
+
   goldenCircleQuestions:any[] = [
     {
       section_id: 1,
@@ -383,27 +384,31 @@ export class QuestionsService {
       label: "Productos y Servicios",
       routerLink:''
     },
-    {
-      id: 4,
-      label: "Clientes",
-      routerLink:''
-    },
-    {
-      id: 5,
-      label: "Competencia",
-      routerLink:''
-    },
-    {
-      id: 6,
-      label: "Datos y Análisis",
-      routerLink:''
-    }
+    // {
+    //   id: 4,
+    //   label: "Clientes",
+    //   routerLink:''
+    // },
+    // {
+    //   id: 5,
+    //   label: "Competencia",
+    //   routerLink:''
+    // },
+    // {
+    //   id: 6,
+    //   label: "Datos y Análisis",
+    //   routerLink:''
+    // }
   ]
 
   constructor() {}
 
   getAllRadarQuestions(){
     return this.radarQuestions;
+  }
+
+  getRadarSectionQuestions(sectionId: number) {
+    return this.radarQuestions.find(section => section.section_id === sectionId)
   }
 
   getAllGoldenCircleQuestions(){

@@ -1,34 +1,24 @@
-import { Component, OnInit } from '@angular/core';
-import { StepsModule } from 'primeng/steps';
+import { Component, OnChanges, OnInit, EventEmitter } from '@angular/core';
 import { QuestionsService } from '../../../core/services/questions.service';
-import { FormControl } from '@angular/forms';
-import { Router } from '@angular/router';
+import { ImportsModule } from '../../../imports';
+import { CommonModule } from '@angular/common';
+import { FormPanelComponent } from './form-panel/form-panel.component';
 
 @Component({
   selector: 'radar-form',
   standalone: true,
-  imports: [StepsModule],
+  imports: [ImportsModule, CommonModule, FormPanelComponent],
   templateUrl: './radar-form.component.html',
   styleUrl: './radar-form.component.scss',
 })
 export class RadarFormComponent implements OnInit {
   items: any[] = [];
-  paymentInformation: any;
-
-  constructor(
-    private questionsService: QuestionsService,
-    private router: Router
-  ) {}
+  constructor(private questionsService: QuestionsService) {}
 
   ngOnInit() {
-    this.items = this.questionsService.getAllSections();
-  }
-
-  nextPage() {
-   
-  }
-
-  prevPage() {
-    
+    this.items = [
+      { icon: 'pi pi-home', route: '/dashboard' },
+      { label: 'Radar Estratetigo' },
+    ];
   }
 }
