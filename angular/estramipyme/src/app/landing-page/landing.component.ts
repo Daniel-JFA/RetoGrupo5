@@ -4,6 +4,8 @@ import { FeaturesComponent } from './features/features.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { ImportsModule } from '../imports';
+
 
 @Component({
   selector: 'landing-page',
@@ -14,6 +16,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     FeaturesComponent,
     TestimonialsComponent,
     FooterComponent,
+    ImportsModule
   ],
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.scss'
