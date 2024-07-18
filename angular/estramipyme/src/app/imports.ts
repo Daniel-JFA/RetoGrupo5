@@ -16,6 +16,10 @@ import { FieldsetModule } from 'primeng/fieldset';
 import { InputNumberModule } from 'primeng/inputnumber';
 import { ProgressBarModule } from 'primeng/progressbar';
 import { BreadcrumbModule } from 'primeng/breadcrumb';
+import { ChartModule } from 'primeng/chart';
+import { CardModule } from 'primeng/card';
+import { AccordionModule } from 'primeng/accordion';
+import { DividerModule } from 'primeng/divider';
 
 
 @NgModule({
@@ -36,7 +40,11 @@ import { BreadcrumbModule } from 'primeng/breadcrumb';
     FieldsetModule,
     InputNumberModule,
     ProgressBarModule,
-    BreadcrumbModule
+    BreadcrumbModule,
+    ChartModule,
+    CardModule,
+    AccordionModule,
+    DividerModule
   ],
   exports: [
     AnimateModule,
@@ -55,7 +63,11 @@ import { BreadcrumbModule } from 'primeng/breadcrumb';
     FieldsetModule,
     InputNumberModule,
     ProgressBarModule,
-    BreadcrumbModule
+    BreadcrumbModule,
+    ChartModule,
+    CardModule,
+    AccordionModule,
+    DividerModule
   ],
 })
 export class ImportsModule {}

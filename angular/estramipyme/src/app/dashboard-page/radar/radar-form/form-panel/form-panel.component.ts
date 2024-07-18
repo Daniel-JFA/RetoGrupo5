@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { ImportsModule } from '../../../../imports';
 import { QuestionsService } from '../../../../core/services/questions.service';
 
@@ -17,47 +17,42 @@ export class FormPanelComponent implements OnInit {
   questions: any = {};
   title:string ="";
   sectionAmount: number = 0;
-  progressValue:number = 0;
   prevSignal:boolean = false;
   nextSignal:boolean = false;
   index:number = 0;
+  screenWidth: number = 0;
 
-  constructor(private questionsService: QuestionsService) {}
+  constructor(private questionsService: QuestionsService) {
+    this.screenWidth = window.innerWidth;
+  }
+  
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.screenWidth = window.innerWidth;
+  }
 
   ngOnInit(): void {
     this.sections = this.questionsService.getAllRadarQuestions();
     this.section = this.sections[this.index];
     this.title = this.section.title;
     this.sectionAmount = this.sections.length;
-    this.progressValue = 0;
+    console.log(this.index)
+    this.prevSignal = true;
   }
 
   handleSection(direction:string) {
     if(direction === "back"){
       this.index = this.index - 1;
-      this.progressValue -= Math.ceil(1 /this.sectionAmount * 100);
     } else {
       this.index = this.index + 1;
-      
-      this.progressValue += Math.ceil(1 /this.sectionAmount * 100);
     }
     this.section = this.questionsService.getAllRadarQuestions()[this.index];
     this.checkIndex();
   }
 
   checkIndex() {
-    if(this.index === 0) {
-      this.prevSignal = true;
-    } else {
-      this.prevSignal = false;
-    }
-
-    if(this.index === this.sectionAmount - 1) {
-      this.nextSignal = true;
-      this.progressValue = 100;
-    } else {
-      this.nextSignal = false;
-    }
+    this.index === 0 ?                      this.prevSignal = true : this.prevSignal = false;
+    this.index === this.sectionAmount - 1 ? this.nextSignal = true : this.nextSignal = false;
   }
 
 }
