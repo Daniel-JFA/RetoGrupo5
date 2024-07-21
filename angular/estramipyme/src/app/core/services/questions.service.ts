@@ -321,12 +321,15 @@ export class QuestionsService {
       title: "Por que?",
       questions: [
         {
-          pregunta: "En una escala del 1 al 10, ¿cómo evaluarías la misión de tu empresa?",
-          tipo: "escala"
+          id: "po1",
+          question: "En una escala del 1 al 10, ¿cómo evaluarías la misión de tu empresa?",
+          type: "integer",
+          scale: [1, 10]
         },
         {
-          pregunta: "¿Qué porcentaje de los empleados entiende y se identifica con la misión de la empresa?",
-          tipo: "porcentaje"
+          id: "po2",
+          question: "¿Qué porcentaje de los empleados entiende y se identifica con la misión de la empresa?",
+          type: "percentage"
         }
       ]
     },
@@ -335,16 +338,20 @@ export class QuestionsService {
       title: "Como?",
       questions: [
         {
-          pregunta: "¿Cuántos procesos de innovación se implementaron en el último año?",
-          tipo: "número"
+          id: "com1",
+          question: "¿Cuántos procesos de innovación se implementaron en el último año?",
+          type: "integer"
         },
         {
-          pregunta: "En una escala del 1 al 10, ¿cómo calificarías la eficiencia de tus procesos actuales?",
-          tipo: "escala"
+          id: "com2",
+          question: "En una escala del 1 al 10, ¿cómo calificarías la eficiencia de tus procesos actuales?",
+          type: "integer",
+          scale: [1, 10]
         },
         {
-          pregunta: "¿Cuál es el porcentaje de cumplimiento de los objetivos estratégicos establecidos para este año?",
-          tipo: "porcentaje"
+          id: "com3",
+          question: "¿Cuál es el porcentaje de cumplimiento de los objetivos estratégicos establecidos para este año?",
+          type: "percentage"
         }
       ]
     },
@@ -353,53 +360,30 @@ export class QuestionsService {
       title: "Que?",
       questions: [
         {
-          pregunta: "¿Cuántos productos o servicios ofrece actualmente tu empresa?",
-          tipo: "número"
+          id: "qu1",
+          question: "¿Cuántos productos o servicios ofrece actualmente tu empresa?",
+          type: "integer"
         },
         {
-          pregunta: "¿Qué porcentaje de tus productos/servicios son altamente valorados por los clientes?",
-          tipo: "porcentaje"
+          id: "qu2",
+          question: "¿Qué porcentaje de tus productos/servicios son altamente valorados por los clientes?",
+          type: "percentage"
         },
         {
-          pregunta: "En una escala del 1 al 10, ¿cómo calificarías la calidad de tus productos/servicios?",
-          tipo: "escala"
+          id: "qu3",
+          question: "En una escala del 1 al 10, ¿cómo calificarías la calidad de tus productos/servicios?",
+          type: "integer",
+          scale: [1, 10]
         }
       ]
     }
-  ]
+  ];
 
-  sections:any[] = [
-    {
-      id: 1,
-      label: "Propósito y Alineación",
-      routerLink: 100
-    },
-    {
-      id: 2,
-      label: "Procesos y Eficiencia",
-      routerLink:''
-    },
-    {
-      id: 3,
-      label: "Productos y Servicios",
-      routerLink:''
-    },
-    // {
-    //   id: 4,
-    //   label: "Clientes",
-    //   routerLink:''
-    // },
-    // {
-    //   id: 5,
-    //   label: "Competencia",
-    //   routerLink:''
-    // },
-    // {
-    //   id: 6,
-    //   label: "Datos y Análisis",
-    //   routerLink:''
-    // }
-  ]
+  questionsSet:any = {
+    radar:this.radarQuestions,
+    goldenCircle:this.goldenCircleQuestions
+  }
+  
 
   constructor() {}
 
@@ -415,7 +399,11 @@ export class QuestionsService {
     return this.goldenCircleQuestions;
   }
 
-  getAllSections() {
-    return this.sections;
+  getAllQuestions(quetionsSetName:string){
+    console.log(quetionsSetName);
+    console.log(this.questionsSet[quetionsSetName]);
+    return this.questionsSet[quetionsSetName];
   }
+
+
 }
