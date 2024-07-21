@@ -3,19 +3,19 @@ import { ImportsModule } from '../../../imports';
 import { FormPanelComponent } from './form-panel/form-panel.component';
 
 @Component({
-  selector: 'radar-form',
+  selector: 'form-container',
   standalone: true,
-  imports: [ImportsModule, FormPanelComponent],
-  templateUrl: './radar-form.component.html',
-  styleUrl: './radar-form.component.scss',
+  imports: [ImportsModule ,FormPanelComponent],
+  templateUrl: './form-container.component.html',
+  styleUrl: './form-container.component.scss'
 })
-export class RadarFormComponent implements OnInit {
+export class FormContainerComponent implements OnInit{
   items: any[] = [];
 
   ngOnInit() {
     this.items = [
       { icon: 'pi pi-home', route: '/dashboard' },
-      { label: 'Radar Estratetigo' },
+      { label: 'Círculo Dorado'}
     ];
   }
 }

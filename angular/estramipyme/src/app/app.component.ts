@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component, numberAttribute } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
@@ -6,6 +7,7 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [
     RouterOutlet,
+    CommonModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
