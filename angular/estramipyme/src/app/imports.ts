@@ -20,6 +20,7 @@ import { ChartModule } from 'primeng/chart';
 import { CardModule } from 'primeng/card';
 import { AccordionModule } from 'primeng/accordion';
 import { DividerModule } from 'primeng/divider';
+import { DataViewModule } from 'primeng/dataview';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { DividerModule } from 'primeng/divider';
     ChartModule,
     CardModule,
     AccordionModule,
-    DividerModule
+    DividerModule,
+    DataViewModule
   ],
   exports: [
     AnimateModule,
@@ -67,7 +69,8 @@ import { DividerModule } from 'primeng/divider';
     ChartModule,
     CardModule,
     AccordionModule,
-    DividerModule
+    DividerModule,
+    DataViewModule
   ],
 })
 export class ImportsModule {}
