@@ -1,23 +1,15 @@
-<!-- <ng-container *ngFor="let item of methods" class="container-fluid d-flex flex-column">
-    <div class="row card my-5 mx-5 d-flex flex-row p-3">
-   
-        <div class="col-md-2">
-          <img class="methods-img img-thumbnail rounded float-start" [src]="item.img" [alt]="item.title">
-        </div>
-        <div class="col-md-6">
-          <h4>{{item.title}}</h4>
-          <p>{{item.description}}</p>
-          <button class="btn btn-primary"  [routerLink]="handlePath(item.link)" >Comenzar</button>
-        </div>
-    </div>
-</ng-container> -->
 <div class="row">
   <ng-container *ngFor="let item of methods">
-    <div class="card mx-2">
-      <img [src]="item.img" class="card-img-top" alt="...">
+    <div class="card mx-2 my-3">
+      @if(item.isLoading){
+        <p-progressSpinner ariaLabel="loading" />
+      }      
+      <img [src]="item.img" class="card-img-top" alt="..." (load)="item.isLoading=false">
+      
       <div class="card-body">
         <h5 class="card-title">{{item.title}}</h5>
         <!-- <p class="card-text">{{item.description}}</p> -->
+        <p-divider />
         <button class="btn btn-primary" [routerLink]="handlePath(item.link)">Comenzar</button>
       </div>
     </div>
