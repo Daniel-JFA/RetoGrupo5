@@ -36,7 +36,6 @@ export class FormPanelComponent implements OnInit {
     this.section = this.sections[this.index];
     this.title = this.section.title;
     this.sectionAmount = this.sections.length;
-    console.log(this.index)
     this.prevSignal = true;
   }
 

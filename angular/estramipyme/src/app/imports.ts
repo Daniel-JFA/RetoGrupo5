@@ -21,6 +21,7 @@ import { CardModule } from 'primeng/card';
 import { AccordionModule } from 'primeng/accordion';
 import { DividerModule } from 'primeng/divider';
 import { DataViewModule } from 'primeng/dataview';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
 
 
 @NgModule({
@@ -46,7 +47,8 @@ import { DataViewModule } from 'primeng/dataview';
     CardModule,
     AccordionModule,
     DividerModule,
-    DataViewModule
+    DataViewModule,
+    ProgressSpinnerModule
   ],
   exports: [
     AnimateModule,
@@ -70,7 +72,8 @@ import { DataViewModule } from 'primeng/dataview';
     CardModule,
     AccordionModule,
     DividerModule,
-    DataViewModule
+    DataViewModule,
+    ProgressSpinnerModule
   ],
 })
 export class ImportsModule {}
