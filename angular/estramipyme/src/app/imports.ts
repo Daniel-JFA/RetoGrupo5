@@ -22,6 +22,7 @@ import { AccordionModule } from 'primeng/accordion';
 import { DividerModule } from 'primeng/divider';
 import { DataViewModule } from 'primeng/dataview';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
+import { DialogModule } from 'primeng/dialog';
 
 
 @NgModule({
@@ -48,7 +49,8 @@ import { ProgressSpinnerModule } from 'primeng/progressspinner';
     AccordionModule,
     DividerModule,
     DataViewModule,
-    ProgressSpinnerModule
+    ProgressSpinnerModule,
+    DialogModule
   ],
   exports: [
     AnimateModule,
@@ -73,7 +75,8 @@ import { ProgressSpinnerModule } from 'primeng/progressspinner';
     AccordionModule,
     DividerModule,
     DataViewModule,
-    ProgressSpinnerModule
+    ProgressSpinnerModule,
+    DialogModule
   ],
 })
 export class ImportsModule {}
