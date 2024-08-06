@@ -22,7 +22,8 @@ export class MethodologiesService {
       description: "El Radar Estratégico es una herramienta para la planificación y evaluación estratégica que permite a las organizaciones mapear y analizar su posición en relación con el entorno competitivo y las tendencias emergentes. Utiliza un enfoque visual para identificar oportunidades y amenazas, evaluando diferentes áreas de la estrategia como el mercado, la competencia, la innovación y las capacidades internas. El Radar Estratégico ayuda a las empresas a ajustar sus estrategias y mantenerse ágiles en un entorno cambiante.",
       img: "assets/images/radar.svg",
       isLoading: true
-    }
+    },
+    
   ];
   constructor() { }
 
