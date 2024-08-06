@@ -23,7 +23,11 @@ import { DividerModule } from 'primeng/divider';
 import { DataViewModule } from 'primeng/dataview';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { DialogModule } from 'primeng/dialog';
-
+import { AvatarModule } from 'primeng/avatar';
+import { BadgeModule } from 'primeng/badge';
+import { PanelMenuModule } from 'primeng/panelmenu';
+import { PanelModule } from 'primeng/panel';
+import { SliderModule } from 'primeng/slider';
 
 @NgModule({
   imports: [
@@ -50,7 +54,12 @@ import { DialogModule } from 'primeng/dialog';
     DividerModule,
     DataViewModule,
     ProgressSpinnerModule,
-    DialogModule
+    DialogModule,
+    AvatarModule,
+    BadgeModule,
+    PanelMenuModule,
+    PanelModule,
+    SliderModule
   ],
   exports: [
     AnimateModule,
@@ -76,7 +85,12 @@ import { DialogModule } from 'primeng/dialog';
     DividerModule,
     DataViewModule,
     ProgressSpinnerModule,
-    DialogModule
+    DialogModule,
+    AvatarModule,
+    BadgeModule,
+    PanelMenuModule,
+    PanelModule,
+    SliderModule
   ],
 })
 export class ImportsModule {}
