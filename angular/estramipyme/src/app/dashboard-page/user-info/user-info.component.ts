@@ -1,16 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { ImportsModule } from 'src/app/imports';
 import { MenuItem } from 'primeng/api';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'user-info',
   standalone: true,
-  imports: [ImportsModule],
+  imports: [ImportsModule,FormsModule],
   templateUrl: './user-info.component.html',
   styleUrl: './user-info.component.scss',
 })
 export class UserInfoComponent implements OnInit {
   items: MenuItem[] = [];
+  date: Date[] | undefined;
   constructor() {}
 
   ngOnInit() {

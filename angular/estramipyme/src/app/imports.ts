@@ -28,6 +28,7 @@ import { BadgeModule } from 'primeng/badge';
 import { PanelMenuModule } from 'primeng/panelmenu';
 import { PanelModule } from 'primeng/panel';
 import { SliderModule } from 'primeng/slider';
+import { CalendarModule } from 'primeng/calendar';
 
 @NgModule({
   imports: [
@@ -59,7 +60,8 @@ import { SliderModule } from 'primeng/slider';
     BadgeModule,
     PanelMenuModule,
     PanelModule,
-    SliderModule
+    SliderModule,
+    CalendarModule
   ],
   exports: [
     AnimateModule,
@@ -90,7 +92,8 @@ import { SliderModule } from 'primeng/slider';
     BadgeModule,
     PanelMenuModule,
     PanelModule,
-    SliderModule
+    SliderModule,
+    CalendarModule
   ],
 })
 export class ImportsModule {}

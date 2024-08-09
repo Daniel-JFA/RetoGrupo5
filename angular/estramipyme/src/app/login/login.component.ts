@@ -33,6 +33,7 @@ export class LoginComponent {
       if (loged) {
         this.router.navigate(['/dashboard']);
       } else {
+        alert("Usuario o contraseña incorrecta");
       }
     }
   }

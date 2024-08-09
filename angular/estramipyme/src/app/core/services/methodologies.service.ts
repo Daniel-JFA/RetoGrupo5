@@ -11,7 +11,7 @@ export class MethodologiesService {
       link: "circle",
       title: "Círculo Dorado",
       description: "El Círculo Dorado es una metodología propuesta por Simon Sinek que se centra en tres niveles de comunicación: 'Por qué', 'Cómo' y 'Qué'. Según Sinek, las empresas y líderes exitosos comienzan comunicando el 'Por qué' (su propósito o causa), luego el 'Cómo' (los procesos o valores que los distinguen) y finalmente el 'Qué' (los productos o servicios que ofrecen). Esta metodología ayuda a inspirar y motivar a los equipos y clientes alineando las acciones con el propósito central.",
-      img: "assets/images/circle.svg",
+      img: "assets/images/gold-circle.svg",
       isLoading: true
 
     },
